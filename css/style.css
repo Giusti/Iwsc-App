@@ -75,14 +75,14 @@ a {
 }
 
 .tabmain {
-	width:938px;
-	height:400px;
+	width:90%;
+	height:600px;
 	background: rgba(255,255,255,0.2);
 	border: 2px solid rgba(255,255,255,0.5);
 	float:left;
 	margin-left:15px;
 	margin-top:15px;
-	margin-left:250px;
+	
 }
 
 .newsiconmain {
@@ -94,8 +94,8 @@ a {
 }
 
 #eventtab {
-	width:960px;
-	height:300px;
+	width:80%;
+	height:250px;
 	background-color: rgba(255,255,255,0.2);
 	border:2px solid rgba(255,255,255,0.4);
 	margin:auto;
@@ -109,17 +109,18 @@ a {
 
 .eventhead {
 	text-align:center;
+	margin-bottom:25%;
 }
 
 .eventtext {
 	padding-left:20px;
 	padding-right:20px;
-	margin-left:300px;
+	
 }
 
 #coursetab {
-	width:960px;
-	height:200px;
+	width:80%;
+	height:250px;
 	background-color: rgba(255,255,255,0.2);
 	border:2px solid rgba(255,255,255,0.4);
 	margin:auto;
@@ -130,18 +131,19 @@ a {
 
 .courseicon {
 	float:left;
-	height:200px;
-	width:200px;
+	height:30%;
+	width:30%;
 }
 
 .coursehead {
 	text-align:center;
+	margin-bottom:25%;
 }
 
 .coursetext {
 	padding-left:20px;
 	padding-right:20px;
-	margin-left:300px;
+	
 }
 
 .membertab1 {
@@ -180,7 +182,7 @@ a {
 
 #membertabl1 {
 	
-	width:420px;
+	width:80%;
 	height:150px;
 	border-bottom:1px solid white;
 	margin:auto;
@@ -189,8 +191,8 @@ a {
 }
 
 .aboutmain {
-	width:938px;
-	height:600px;
+	width:80%;
+	height:750px;
 	background: rgba(255,255,255,0.2);
 	border: 2px solid rgba(255,255,255,0.5);
 	margin:auto;

@@ -32,36 +32,46 @@ require_once("dbconnect.php"); // DB-Verbindung einbinden
 		</div>
 		<div data-role="content">
 
-<?php
-    $sql = "SELECT id, eventdate, eventcountry, countryimg, eventinfo, Eventname, time, price, booking
-            FROM courses LIMIT 4";
-            
-    $res = mysqli_query($dblink, $sql);
-
-    $id = $row['id'];
-
-
-
-    while( $row = mysqli_fetch_assoc($res) ){
-
-
-        $date2 = date('d-m-Y',$row['eventdate']);
-    ?>
 
 
 
 
 					<div id="coursetab">
-					<img class='courseicon'src="img/<?php echo $row['countryimg']; ?>"><h3 class='coursehead'><?php echo $row['Eventname']; ?></h3>
-					<p class="coursetext"><?php echo $row['eventinfo']; ?></p>	
-					<p class="coursetext">Time: <?php echo $row['time']; ?></p>
-					<p class="coursetext">Price: <?php echo $row['price']; ?></p>
-					<p class="coursetext">Booking: <?php echo $row['booking']; ?></p>
+					<img class='courseicon'src="img/course1.gif"><h3 class='coursehead'>Basic</h3>
+					<p class="coursetext">Basic information, theory and sailing, with your personal coach.</p>	
+					<p class="coursetext">Time: 20h</p>
+					<p class="coursetext">Price: 270 Euro</p>
+					<p class="coursetext">Booking: study@iwsc.com</p>
 
 					</div>
-<?php
-    }
-    ?>	
+
+					<div id="coursetab">
+					<img class='courseicon'src="img/course2.jpg"><h3 class='coursehead'>Advanced</h3>
+					<p class="coursetext">Information, to become an advanced sailor.</p>	
+					<p class="coursetext">Time: 40h</p>
+					<p class="coursetext">Price: 400 Euro</p>
+					<p class="coursetext">Booking: study@iwsc.com</p>
+
+					</div>
+
+					<div id="coursetab">
+					<img class='courseicon'src="img/course3.gif"><h3 class='coursehead'>Professional</h3>
+					<p class="coursetext">Professional sailing, for competition.</p>	
+					<p class="coursetext">Time: 90h</p>
+					<p class="coursetext">Price: 700 Euro</p>
+					<p class="coursetext">Booking: study@iwsc.com</p>
+
+					</div>
+
+					<div id="coursetab">
+					<img class='courseicon'src="img/course4.png"><h3 class='coursehead'>Coast Patent</h3>
+					<p class="coursetext">Croatia coast patent.</p>	
+					<p class="coursetext">Time: 160h</p>
+					<p class="coursetext">Price: 1200 Euro</p>
+					<p class="coursetext">Booking: study@iwsc.com</p>
+
+					</div>
+
 
 
 

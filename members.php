@@ -34,41 +34,26 @@ require_once("dbconnect.php"); // DB-Verbindung einbinden
 
            
 
-<?php
-    $sql = "SELECT uname, email, reg_date, img, area
-            FROM staff";
-            
-    $res = mysqli_query($dblink, $sql);
-
-    $id = $row['id'];
-
-
-
-    while( $row = mysqli_fetch_assoc($res) ){
-
-
-        $date2 = date('d-m-Y',$row['reg_date']);
-    ?>
 
 				
 					
 						<div id="membertabl1">
 					
-					<img class="memberimgl" src="img/staff/<?php echo $row['img']; ?>"></img>
+					<img class="memberimgl" src="img/staff/staff1.jpeg"></img>
 					<p class="membertextl">
 						<table class="memberl">
 
     <tr><td><label id="subuname"for="uname">Name:</label></td>
-   		<td><label id="subuname"for="uname"><?php echo $row['uname']; ?></label></td>
+   		<td><label id="subuname"for="uname">Melissa Adam</label></td>
 
     <tr><td><label id="subuname"for="uname">E-mail:</label></td>
-    	<td><label id="subuname"for="uname"><?php echo $row['email']; ?></label></td>
+    	<td><label id="subuname"for="uname">adam.m@iwsc.com</label></td>
 
     <tr><td><label id="subuname"for="uname">Geb. Datum:</label></td>
-    	<td><label id="subuname"for="uname"><?php echo $date2; ?></label></td>
+    	<td><label id="subuname"for="uname">01-01-1970</label></td>
 
     <tr><td><label id="subpw" for="pw">Bereich:</label></td>
-    	<td><label id="subuname"for="uname"><?php echo $row['area']; ?></label></td>
+    	<td><label id="subuname"for="uname">Verkauf</label></td>
 
     
 
@@ -86,6 +71,180 @@ require_once("dbconnect.php"); // DB-Verbindung einbinden
 
 				
 				</div>
+                <div id="membertabl1">
+                    
+                    <img class="memberimgl" src="img/staff/staff2.jpeg"></img>
+                    <p class="membertextl">
+                        <table class="memberl">
+
+    <tr><td><label id="subuname"for="uname">Name:</label></td>
+        <td><label id="subuname"for="uname">Markus Fitz</label></td>
+
+    <tr><td><label id="subuname"for="uname">E-mail:</label></td>
+        <td><label id="subuname"for="uname">m.fitz@iwsc.com</label></td>
+
+    <tr><td><label id="subuname"for="uname">Geb. Datum:</label></td>
+        <td><label id="subuname"for="uname">11-03-1958</label></td>
+
+    <tr><td><label id="subpw" for="pw">Bereich:</label></td>
+        <td><label id="subuname"for="uname">Ausbildung</label></td>
+
+    
+
+</p>
+    
+    </table>
+                
+
+
+
+
+
+
+
+
+                
+                </div>
+
+<div id="membertabl1">
+                    
+                    <img class="memberimgl" src="img/staff/staff3.jpeg"></img>
+                    <p class="membertextl">
+                        <table class="memberl">
+
+    <tr><td><label id="subuname"for="uname">Name:</label></td>
+        <td><label id="subuname"for="uname">Thomas Bernd</label></td>
+
+    <tr><td><label id="subuname"for="uname">E-mail:</label></td>
+        <td><label id="subuname"for="uname">bernd.t@iwsc.com</label></td>
+
+    <tr><td><label id="subuname"for="uname">Geb. Datum:</label></td>
+        <td><label id="subuname"for="uname">02-06-1976</label></td>
+
+    <tr><td><label id="subpw" for="pw">Bereich:</label></td>
+        <td><label id="subuname"for="uname">Verkauf</label></td>
+
+    
+
+</p>
+    
+    </table>
+                
+
+
+
+
+
+
+
+
+                
+                </div>
+
+<div id="membertabl1">
+                    
+                    <img class="memberimgl" src="img/staff/staff4.jpeg"></img>
+                    <p class="membertextl">
+                        <table class="memberl">
+
+    <tr><td><label id="subuname"for="uname">Name:</label></td>
+        <td><label id="subuname"for="uname">Peter Henard</label></td>
+
+    <tr><td><label id="subuname"for="uname">E-mail:</label></td>
+        <td><label id="subuname"for="uname">peter.h@iwsc.com</label></td>
+
+    <tr><td><label id="subuname"for="uname">Geb. Datum:</label></td>
+        <td><label id="subuname"for="uname">05-07-1979</label></td>
+
+    <tr><td><label id="subpw" for="pw">Bereich:</label></td>
+        <td><label id="subuname"for="uname">Buchhaltung</label></td>
+
+    
+
+</p>
+    
+    </table>
+                
+
+
+
+
+
+
+
+
+                
+                </div>
+
+<div id="membertabl1">
+                    
+                    <img class="memberimgl" src="img/staff/staff5.jpeg"></img>
+                    <p class="membertextl">
+                        <table class="memberl">
+
+    <tr><td><label id="subuname"for="uname">Name:</label></td>
+        <td><label id="subuname"for="uname">Franzine Baum</label></td>
+
+    <tr><td><label id="subuname"for="uname">E-mail:</label></td>
+        <td><label id="subuname"for="uname">baum@iwsc.com</label></td>
+
+    <tr><td><label id="subuname"for="uname">Geb. Datum:</label></td>
+        <td><label id="subuname"for="uname">05-012-1982</label></td>
+
+    <tr><td><label id="subpw" for="pw">Bereich:</label></td>
+        <td><label id="subuname"for="uname">Verkauf</label></td>
+
+    
+
+</p>
+    
+    </table>
+                
+
+
+
+
+
+
+
+
+                
+                </div>
+<div id="membertabl1">
+                    
+                    <img class="memberimgl" src="img/staff/staff6.jpeg"></img>
+                    <p class="membertextl">
+                        <table class="memberl">
+
+    <tr><td><label id="subuname"for="uname">Name:</label></td>
+        <td><label id="subuname"for="uname">Dieter Duma</label></td>
+
+    <tr><td><label id="subuname"for="uname">E-mail:</label></td>
+        <td><label id="subuname"for="uname">dieter.d@iwsc.com</label></td>
+
+    <tr><td><label id="subuname"for="uname">Geb. Datum:</label></td>
+        <td><label id="subuname"for="uname">05-07-1969</label></td>
+
+    <tr><td><label id="subpw" for="pw">Bereich:</label></td>
+        <td><label id="subuname"for="uname">Management</label></td>
+
+    
+
+</p>
+    
+    </table>
+                
+
+
+
+
+
+
+
+
+                
+                </div>
+
 
 
 
@@ -93,9 +252,6 @@ require_once("dbconnect.php"); // DB-Verbindung einbinden
 
 					
 
-<?php
-    }
-    ?>
 
 <!--
     <div id='space'></div>

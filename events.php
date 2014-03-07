@@ -32,38 +32,43 @@ require_once("dbconnect.php"); // DB-Verbindung einbinden
 		</div>
 		<div data-role="content">
 
-<?php
-    $sql = "SELECT id, eventdate, eventcountry, countryimg, eventinfo, Eventname, class, type, participate
-            FROM events LIMIT 3";
-            
-    $res = mysqli_query($dblink, $sql);
 
-    $id = $row['id'];
-
-
-
-    while( $row = mysqli_fetch_assoc($res) ){
-
-
-        $date2 = date('d-m-Y',$row['eventdate']);
-    ?>
 
 
 
 
 					<div id="eventtab">
-					<img class='eventicon'src="img/<?php echo $row['countryimg']; ?>" style="height:300px; width:300px"><h3 class='eventhead'><?php echo $row['Eventname']; ?></h3>
-					<p class="eventtext"><?php echo $row['eventinfo']; ?> </p>	
-					<p class="eventtext">Date: <?php echo $date2; ?> </p>
-					<p class="eventtext">Location: <?php echo $row['eventcountry']; ?> </p>
-					<p class="eventtext">Class: <?php echo $row['class']; ?> </p>
-					<p class="eventtext">Type: <?php echo $row['type']; ?> </p>
-					<p class="eventtext">Participate: <?php echo $row['participate']; ?> </p>
+					<img class='eventicon'src="img/laser.jpeg" style="height:30%; width:30%;"><h3 class='eventhead'>Sailing Regatta</h3>
+					<p class="eventtext">Sailing Regatta at Attersee in Austria.</p>	
+					<p class="eventtext">Date: 26-06-2014</p>
+					<p class="eventtext">Location: Wolfgangsee - Austria</p>
+					<p class="eventtext">Class: Laser</p>
+					<p class="eventtext">Type: Mixed </p>
+					<p class="eventtext">Participate: sail@iwsc.com</p>
 
 					</div>
-<?php
-    }
-    ?>	
+
+					<div id="eventtab">
+					<img class='eventicon'src="img/49er.jpg" style="height:30%; width:30%;"><h3 class='eventhead'>Sailing Regatta</h3>
+					<p class="eventtext">Sailing Regatta at Wolfgangsee in Austria.</p>	
+					<p class="eventtext">Date: 23-08-2014</p>
+					<p class="eventtext">Location: Attersee - Austria</p>
+					<p class="eventtext">Class: 49er</p>
+					<p class="eventtext">Type: Men </p>
+					<p class="eventtext">Participate: sail@iwsc.com</p>
+
+					</div>
+
+					<div id="eventtab">
+					<img class='eventicon'src="img/470.jpg" style="height:30%; width:30%;"><h3 class='eventhead'>Sailing Regatta</h3>
+					<p class="eventtext">Sailing Regatta at Mondsee in Austria.</p>	
+					<p class="eventtext">Date: 29-08-2014</p>
+					<p class="eventtext">Location: Mondsee - Austria</p>
+					<p class="eventtext">Class: 470</p>
+					<p class="eventtext">Type: Women</p>
+					<p class="eventtext">Participate: sail@iwsc.com</p>
+
+					</div>
 
 </div>
 		<div data-role="footer" data-position="fixed">

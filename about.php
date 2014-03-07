@@ -45,7 +45,7 @@ require_once("dbconnect.php"); // DB-Verbindung einbinden
 
 					<div class="aboutmain" id="<?php echo $row['id']; ?>">
 					<h3 class='aboutheadmain' style="font-size:150%; float:none; color: #B6B1B1; margin-left:80px; margin-top:40px" >About Us</h3>
-					<img src="img/map.png" style="float:right; width:350px; height:200px; margin-right:20px; border: 5px solid rgba(255,255,255,0.4);">
+					<img src="img/map.png" style="float:right; width:84%; height:180px; margin-right:20px; border: 5px solid rgba(255,255,255,0.4);">
 					<p class="abouttextmain" style="width:500px; color: #fff; margin-left:20px; font-size:130%">
 					IWSC</br>
 					A-5360 St. Wolfgang am See</br>
@@ -55,7 +55,7 @@ require_once("dbconnect.php"); // DB-Verbindung einbinden
 					Mail: contact@iwsc.com</br>
 					www.iwsc.at</br>
 				</p>
-				<p style="margin-top:20px; margin-bottom:20px; color: #fff; font-size:130%">Opening Hours</p>
+				<p style="margin-top:20px; margin-bottom:20px; margin-left:20px; color: #fff; font-size:130%">Opening Hours</p>
 				<p class="abouttextmain" style="width:500px; color: #fff; margin-left:20px; font-size:150% margin-top:20px">
 					
 					Monday: 8am - 17pm</br>
